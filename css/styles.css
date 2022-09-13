@@ -679,7 +679,6 @@ ul {
 .modal {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
 
   width: 528px;
   height: 581px;
@@ -691,12 +690,13 @@ ul {
 }
 
 .button-close {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 0;
-  margin-top: 3px;
-  margin-right: 12px;
+  margin: 3px 12px 543px 490px;
 
   width: 30px;
   height: 30px;
@@ -849,4 +849,13 @@ ul {
 
 .form-text::placeholder {
   transform: translateX(16px);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.ds {
+  display: inline;
 }
