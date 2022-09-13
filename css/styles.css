@@ -874,6 +874,10 @@ label {
   color: var(--secondary-color);
 }
 
+label.input-terms {
+  margin-bottom: 0;
+}
+
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -938,6 +942,7 @@ input.input-terms {
 
 .position {
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
