@@ -10,7 +10,9 @@
   --subborder-color: #afb1b8;
   --backgroundminilogo-color: #ffffff1a;
   --backdrop-color: #00000033;
-  --backgroundtext-color: rgba(48, 49, 59, 0.8);
+  --backgroundtext-color: #30313bcc;
+  --navlink-color: #ffffff99;
+  --input-border-color: #ffffff4d;
 }
 
 body {
@@ -18,6 +20,7 @@ body {
   color: var(--main-color);
   letter-spacing: 0.03em;
   font-size: 14px;
+  outline: none;
 }
 
 .link-header {
@@ -145,12 +148,12 @@ body {
 }
 
 .link-map {
-  color: hwb(0 100% 0%);
+  color: var(--white-color);
 }
 
 .link-mail,
 .link-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--navlink-color);
 }
 
 .section-hero-subtitle {
@@ -735,7 +738,8 @@ ul {
 .section-link,
 .button-close,
 input,
-textarea {
+textarea,
+.icon-modal {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -820,7 +824,7 @@ textarea {
 .form-text {
   width: 358px;
   height: 50px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--navlink-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -849,6 +853,8 @@ textarea {
 
 .footer-form-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .join-btn {
@@ -961,6 +967,11 @@ input:focus {
   border-color: var(--link-color);
 }
 
+input.data {
+  position: relative;
+  padding-left: 34px;
+}
+
 textarea:hover,
 .textarea:focus {
   border-color: var(--link-color);
@@ -968,5 +979,13 @@ textarea:hover,
 
 input.form-text:hover,
 .input.form-text:focus {
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--input-border-color);
+}
+
+.icon-modal {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: -42px;
+  margin-left: 12px;
 }
