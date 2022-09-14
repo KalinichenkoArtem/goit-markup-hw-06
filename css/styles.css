@@ -732,7 +732,10 @@ ul {
 .logo,
 .portfolio-hero-btn,
 .portfolio-btn,
-.section-link {
+.section-link,
+.button-close,
+input,
+textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -961,10 +964,12 @@ input:focus {
   border-color: var(--link-color);
 }
 
-textarea:hover {
+textarea:hover,
+.textarea:focus {
   border-color: var(--link-color);
 }
 
-input.form-text:hover {
+input.form-text:hover,
+.input.form-text:focus {
   border-color: rgba(255, 255, 255, 0.3);
 }
