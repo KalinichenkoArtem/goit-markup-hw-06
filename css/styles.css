@@ -962,9 +962,14 @@ input.input-terms {
   justify-content: center;
 }
 
-input:hover,
-input:focus {
+input.data:hover,
+input.data:focus {
   border-color: var(--link-color);
+}
+
+.label-data:hover .icon-modal,
+.label-data:focus .icon-modal {
+  fill: var(--link-color);
 }
 
 input.data {
@@ -973,19 +978,18 @@ input.data {
 }
 
 textarea:hover,
-.textarea:focus {
+textarea:focus {
   border-color: var(--link-color);
 }
 
-input.form-text:hover,
-.input.form-text:focus {
-  border-color: var(--input-border-color);
+.label-data {
+  position: relative;
 }
 
 .icon-modal {
   position: absolute;
+  top: 50%;
   width: 18px;
   height: 18px;
-  margin-top: -42px;
   margin-left: 12px;
 }
