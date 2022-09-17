@@ -20,7 +20,6 @@ body {
   color: var(--main-color);
   letter-spacing: 0.03em;
   font-size: 14px;
-  outline: none;
 }
 
 .link-header {
@@ -969,7 +968,7 @@ input.input-terms {
 input.data:hover,
 input.data:focus {
   border-color: var(--link-color);
-  outline: none;
+  outline: transparent;
 }
 
 .label-data:hover .icon-modal,
@@ -985,7 +984,7 @@ input.data {
 textarea:hover,
 textarea:focus {
   border-color: var(--link-color);
-  outline: none;
+  outline: transparent;
 }
 
 .label-data {
