@@ -831,6 +831,10 @@ textarea,
   background: var(--background-color);
 }
 
+.form-text:focus {
+  outline: none;
+}
+
 .btn-footer {
   display: flex;
   align-items: center;
@@ -965,10 +969,11 @@ input.input-terms {
 input.data:hover,
 input.data:focus {
   border-color: var(--link-color);
+  outline: none;
 }
 
 .label-data:hover .icon-modal,
-.label-data:focus .icon-modal {
+.label-data:focus-visible .icon-modal {
   fill: var(--link-color);
 }
 
@@ -980,6 +985,7 @@ input.data {
 textarea:hover,
 textarea:focus {
   border-color: var(--link-color);
+  outline: none;
 }
 
 .label-data {
