@@ -683,8 +683,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 0 40px 0;
   width: 528px;
-  height: 581px;
+  height: 501px;
 
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -738,7 +739,6 @@ ul {
 .button-close,
 input,
 textarea,
-.icon-modal,
 .icon-check,
 .icon-uncheck {
   transition-duration: 250ms;
@@ -856,14 +856,14 @@ textarea,
   border-radius: 4px;
 }
 
-.footer-form-button {
+.form-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .join-btn {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 input {
@@ -873,7 +873,6 @@ input {
 label {
   display: flex;
   flex-direction: column;
-  /* margin-bottom: 10px; */
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
